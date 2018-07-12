@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC >
+
+<html dir="rtl" lang="en">
+
+<head>
+  <title>Nesher Login</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script src="https://cors-anywhere.herokuapp.com/https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  
+  <main>
+    <div class="conecting-container">
+      <div class="frame">
+        <div class="frame-header">
+          <!-- <div class="logo-wraper">
+            <img src="assets/nesherLogo.png" alt="">
+          </div> -->
+          <div class="nav login">
+            <ul class="links">
+              <li class="customer-inactive">
+                <a class="login-title hidden">פרטי לקוח </a>
+              </li>
+              <li class="signin-active">
+                <a class="login-title active">התחברות לנשר</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lang-container">
+          <ul class="lang-ul">
+            <li class="signin-active lang">
+                <a class="">العربية</a>
+              </li>
+              <li class="signin-active lang">
+                <a class="">ENGLISH</a>
+              </li>
+              <li class="signin-active lang">
+                <a class="">עברית</a>
+              </li>
+          </ul>
+          <form class="form-signin" action="" method="post" name="form">
+            <label for="username">שם משתמש</label>
+            <input class="form-styling" type="text" name="username" placeholder="" />
+            <label for="password">סיסמה</label>
+            <input class="form-styling" type="text" name="password" placeholder="" />
+            <a class="btn btn-animate">כניסה</a>
+          </form>
+
+          <form class="form-customer" action="" method="post" name="form">
+            <label for="fullname">לקוח</label>
+            <input class="form-styling" type="text" name="fullname" placeholder="" />
+            <label for="customerNumber">מספר לקוח</label>
+            <input class="form-styling" type="text" name="customerNumber" placeholder="" />
+            <label for="billingSite">אתר לחיוב</label>
+            <input class="form-styling" type="text" name="password" placeholder="" />
+            <a href="orderDetails.html" ng-click="checked = !checked" class="btn-customer">הבא</a>
+          </form>
+
+          <div class="success">
+            <svg width="270" height="270" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 60 60" id="check" ng-class="checked ? 'checked' : ''">
+              <path fill="#ffffff" d="M40.61,23.03L26.67,36.97L13.495,23.788c-1.146-1.147-1.359-2.936-0.504-4.314
+                          c3.894-6.28,11.169-10.243,19.283-9.348c9.258,1.021,16.694,8.542,17.622,17.81c1.232,12.295-8.683,22.607-20.849,22.042
+                          c-9.9-0.46-18.128-8.344-18.972-18.218c-0.292-3.416,0.276-6.673,1.51-9.578" />
+              <div class="successtext">
+                <p> Thanks for signing up! Check your email for confirmation.</p>
+              </div>
+          </div>
+        </div>
+
+        <div class="forgot">
+          <!-- <a href="#">Forgot your password?</a> -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/dom.sevice.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC >
+
+<html dir="rtl" lang="en">
+
+<head>
+    <title>Nesher order details</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <script src="https://cors-anywhere.herokuapp.com/https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <main>
+        <div class="conecting-container order">
+            <div class="frame order">
+                <div class="frame-header">
+                    <div class="logo-wraper">
+                        <img src="assets/nesherLogo.png" alt="">
+                    </div>
+                    <div class="title">
+                        <h1>פרטי הזמנה</h1>
+                    </div>
+                </div>
+
+                <div class="form-container order-details">
+                    <form class="product" action="" method="post" name="form">
+                        <h3 class="line-tittle">מוצר</h3>
+                        <div class="line-product product">
+                            <div class="label-wraper">
+                                <label for="sku">מק"ט</label>
+                            </div>
+                            <select name="sku" class="form-styling">
+                                <option>first option</option>
+                                <option>second option</option>
+                                <option>third option</option>
+                            </select>
+                            <label for="price">מחיר</label>
+                            <input class="form-styling" type="text" name="price" placeholder="" />
+                            <label for="order-qt">כמות</label>
+                            <select name="order-qt" class="form-styling">
+                                <option>first option</option>
+                                <option>option</option>
+                                <option>option</option>
+                            </select>
+                            <div>
+                                <div class="label-wraper">
+                                    <label for="description">תאור</label>
+                                </div>
+                                <input class="form-styling in-block-lg" type="text" name="description" placeholder="" />
+                            </div>
+                        </div>
+
+                        <h3 class="line-tittle">פרטי אספקה</h3>
+                        <div class="line-Shipping-details">
+                            <div class="label-wraper">
+                                <label for="shipToCustomer">לקוח למשלוח</label>
+                            </div>
+                            <select name="shipToCustomer" class="form-styling customer">
+                                <option>first option</option>
+                                <option>second option</option>
+                                <option>third option</option>
+                            </select>
+
+                            <label for="deliveryDate"> תאריך אספקה</label>
+                            <select name="deliveryDate" class="form-styling">
+                                <option>first option</option>
+                                <option>option</option>
+                                <option>option</option>
+                            </select>
+                            <div>
+                                <div class="label-wraper">
+                                    <label for="shippingAddress">כתובת למשלוח </label>
+                                </div>
+                                <input class="form-styling in-block-lg" type="text" name="shippingAddress" placeholder="" />
+                            </div>
+                        </div>
+
+                        <h3 class="line-tittle">פרטי הובלה</h3>
+                        <div class="line-transport-details">
+                                <div class="label-wraper">
+                                    <label for="comments">הערות</label>
+                                </div>
+                            <input class="form-styling" type="text" name="comments" placeholder="" />
+                            <label for="TermsOfTransportation">תנאי הובלה</label>
+                            <select name="TermsOfTransportation" class="form-styling">
+                                <option>first option</option>
+                                <option>second option</option>
+                                <option>third option</option>
+                            </select>
+                            <label for="transporter">חברת הובלה</label>
+                            <select name="transporter" class="form-styling">
+                                <option>first option</option>
+                                <option>option</option>
+                                <option>option</option>
+                            </select>
+
+                        </div>
+
+                        <div class="line-product order buttons">
+                            <div class="icon-container">
+                                <div class="icon-btn-wraper">
+                                    <a href="ordersSummaryTable1.html">
+                                        <img src="assets/orderDetailsIcons/icon.chart_final-2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon-label">
+                                    <label>שמור ועבור לעגלה</label>
+                                </div>
+                            </div>
+                            <div class="icon-container">
+                                <div class="icon-btn-wraper">
+                                    <a>
+                                        <img src="assets/orderDetailsIcons/duplicate.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon-label">
+                                    <label>שמור ושכפל</label>
+                                </div>
+                            </div>
+                            <div class="icon-container">
+                                <div class="icon-btn-wraper">
+                                    <a>
+                                        <img src="assets/orderDetailsIcons/addneww.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon-label">
+                                    <label>שמור והוסף</label>
+                                </div>
+                            </div>
+                            <div class="icon-container">
+                                <div class="icon-btn-wraper">
+                                    <a onclick="clearFields()">
+                                        <img src="assets/orderDetailsIcons/Delete.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon-label">
+                                    <label>נקה</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/dom.sevice.js"></script>
+
+</body>
+
+</html>

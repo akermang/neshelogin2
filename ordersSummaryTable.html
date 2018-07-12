@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC >
+
+<html dir="rtl" lang="en">
+
+<head>
+    <title>Nesher order summary</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <script src="https://cors-anywhere.herokuapp.com/https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <main>
+        <div class="conecting-container order">
+            <div class="frame order summary">
+                <div class="frame-header">
+                    <div class="logo-wraper">
+                        <img src="assets/nesherLogo.png" alt="">
+                    </div>
+                    <div class="title">
+                        <h1>סיכום הזמנה</h1>
+                    </div>
+                    <div class="btn-table"><a class="btn btn-summary" href="ordersSummaryTable1.html"> הצג טבלה</a></div>
+                    <div class="btn-table"><a class="btn btn-summary" href="orderSummary.html"> הזמנה אחרונה</a></div>
+                </div>
+                <div class="form-container order-details">
+                    <form class="product" action="" method="post" name="form">
+
+                        <div>
+                            <table id="tableOutput" class="responseTable table table-bordered table-hover table-striped table-responsive">
+                                <thead id="tableOutputHead">
+                                    <tr>
+                                        <th name="Seq">מק"ט</th>
+                                        <th name="description">תאור</th>
+                                        <th name="price">מחיר</th>
+                                        <th name="order-qt">כמות</th>
+                                        <th name="shipToCustomer">לקוח למשלוח</th>
+                                        <th name="shippingAddress">כתובת</th>
+                                        <th name="deliveryDate">תאריך אספקה</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tableOutputBody">
+                                    <tr>
+                                        <td name="Seq">מק"ט</td>
+                                        <td name="description">תאור</td>
+                                        <td name="price">מחיר</td>
+                                        <td name="order-qt">כמות</td>
+                                        <td name="shipToCustomer">לקוח למשלוח</td>
+                                        <td name="shippingAddress">כתובת</td>
+                                        <td name="deliveryDate">תאריך אספקה</td> 
+                                    </tr>
+                                    <tr>
+                                        <td name="Seq">מק"ט</td>
+                                        <td name="description">תאור</td>
+                                        <td name="price">מחיר</td>
+                                        <td name="order-qt">כמות</td>
+                                        <td name="shipToCustomer">לקוח למשלוח</td>
+                                        <td name="shippingAddress">כתובת</td>
+                                        <td name="deliveryDate">תאריך אספקה</td> 
+                                    </tr>
+
+                                    <tr>
+                                        <td name="Seq">מק"ט</td>
+                                        <td name="description">תאור</td>
+                                        <td name="price">מחיר</td>
+                                        <td name="order-qt">כמות</td>
+                                        <td name="shipToCustomer">לקוח למשלוח</td>
+                                        <td name="shippingAddress">כתובת</td>
+                                        <td name="deliveryDate">תאריך אספקה</td> 
+                                    </tr>                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- <h3 class="line-tittle">סיכום</h3> -->
+                        <div class="line-product summary space-around">
+                            <div class="label-wraper">
+                                <label for="sum">סה"כ</label>
+                            </div>
+                            <input class="form-styling" type="number" name="sum" placeholder="" readonly />
+                            <label for="vat">מע"מ</label>
+                            <input class="form-styling" type="number" name="vat" placeholder="" readonly />
+                            <label for="total">לתשלום</label>
+                            <input class="form-styling" type="number" name="total" placeholder="" readonly/>
+                        </div>
+
+                        <div id="sendOrder-container" class="line-product summary buttons">
+                            <div class="icon-btn-wraper summary">
+                                <a href="orderDetails.html" class="btn btn-summary ">
+                                    <!-- <img src="assets/orderDetailsIcons/icon.chart_final-2.png" alt=""> -->
+                                    קודם
+                                </a>
+                            </div>
+                            <div class="icon-btn-wraper summary">
+                                <a onclick="sendOrder()" class="btn btn-summary ">
+                                    <!-- <img src="assets/orderDetailsIcons/icon.chart_final-2.png" alt=""> -->
+                                    הזמן
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/dom.sevice.js"></script>
+
+</body>
+
+</html>
