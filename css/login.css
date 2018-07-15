@@ -405,7 +405,7 @@ li.lang {
 }
 
 .customer-active a {
-  display: inline;
+  display: none;
   cursor: pointer;
   color: #ffffff;
   text-decoration: none;
@@ -1223,13 +1223,23 @@ label.link-label {
     height: 103px;
   }
 
+  .form-customer,
   .form-signin {
     width: 100%;
   }
 
-  div.frame-footer {
-    margin-top: 150px;
+  .form-customer {
+    padding-top: 0;
   }
+
+  div.frame-footer {
+    margin-top: 130px;
+  }
+
+  .form-customer div.frame-footer {
+    margin-top: 70px;
+  }
+
   .signin-active a {
     font-size: 13px;
   }
