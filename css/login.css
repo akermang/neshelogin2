@@ -1,6 +1,8 @@
 /* conecting html */
 main {
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -1215,6 +1217,10 @@ label.link-label {
 }
 
 @media (max-width: 425px) {
+  main {
+    display: block;
+  }
+
   .conecting-container {
     padding-top: 0;
     padding-bottom: 30px;
