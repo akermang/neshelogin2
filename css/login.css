@@ -211,7 +211,7 @@ main {
 
 .conecting-container {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 12px;
 }
 
 .conecting-container.order {
@@ -279,6 +279,14 @@ div.frame-footer {
   color: #ffffff;
   padding-top: 32px;
   margin-top: 100px;
+}
+
+.form-customer div.frame-footer {
+  background-position-y: 15px;
+  margin-top: 90px;
+  padding-top: 20px;
+  background-size: 95px;
+  padding-top: 12px;
 }
 
 .frame-footer p {
@@ -444,7 +452,7 @@ li.lang {
   font-weight: 300;
   padding-left: 37px;
   padding-right: 37px;
-  padding-top: 55px;
+  padding-top: 0;
   position: relative;
   top: -375px;
   left: 400px;
