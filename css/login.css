@@ -547,6 +547,10 @@ li.lang {
   height: 30px;
 }
 
+.form-styling.comments {
+  width: 25.7%;
+}
+
 select {
   -webkit-appearance: none;
   -webkit-border-radius: 20px!important;
@@ -579,6 +583,10 @@ label {
 div.label-wraper {
   width: 55px;
   display: inline-block;
+}
+
+div.label-wraper.comments {
+  width: 105px;
 }
 
 div.label-wraper.w-s-60 {
@@ -705,7 +713,6 @@ div.btn-table {
   display: flex;
   align-items: center;
   margin-left: 126px;
-  border-bottom: 2px solid #1059ff;
 }
 
 .icon-container {
