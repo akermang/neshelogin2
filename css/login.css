@@ -1175,12 +1175,36 @@ table#tableOutput {
   padding: 5px;
   width: 150px;
 }
+
+td.buttons {
+  background: #264159;
+}
 div[class^="link-"] {
   background-color: #fff;
   margin: 5px;
   width: 210px;
   border-radius: 7px;
   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+}
+
+table .icon-container {
+  margin: 0 auto;
+  display: inherit;
+}
+table .icon-btn-wraper {
+  width: 35px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+table .icon-btn-wraper a img:hover {
+  background: #264159;
+}
+
+
+table .buttons-container {
+  display: flex;
+  transform: translateY(50%);
 }
 
 div[class^="link-"] img {

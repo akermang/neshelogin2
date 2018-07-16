@@ -26,8 +26,12 @@
                     <div class="title">
                         <h1>סיכום הזמנה</h1>
                     </div>
-                    <div class="btn-table"><a class="btn btn-summary" href="ordersSummaryTable1.html"> הצג טבלה</a></div>
-                    <div class="btn-table"><a class="btn btn-summary" href="orderSummary.html"> הזמנה אחרונה</a></div>
+                    <div class="btn-table">
+                        <a class="btn btn-summary" href="ordersSummaryTable1.html"> הצג טבלה</a>
+                    </div>
+                    <div class="btn-table">
+                        <a class="btn btn-summary" href="orderSummary.html"> הזמנה אחרונה</a>
+                    </div>
                 </div>
                 <div class="form-container order-details">
                     <form class="product" action="" method="post" name="form">
@@ -36,6 +40,7 @@
                             <table id="tableOutput" class="responseTable table table-bordered table-hover table-striped table-responsive">
                                 <thead id="tableOutputHead">
                                     <tr>
+                                        <th name="buttons"></th>
                                         <th name="Seq">מק"ט</th>
                                         <th name="description">תאור</th>
                                         <th name="price">מחיר</th>
@@ -47,33 +52,120 @@
                                 </thead>
                                 <tbody id="tableOutputBody">
                                     <tr>
+                                        <td class="buttons">
+                                            <div class="buttons-container">
+                                                <div class="icon-container">
+                                                    <div class="icon-btn-wraper">
+                                                        <a>
+                                                            <img src="assets/orderDetailsIcons/duplicate.png" alt="">
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="icon-container">
+                                                    <div class="icon-btn-wraper">
+                                                        <a>
+                                                            <img src="assets/orderDetailsIcons/addneww.png" alt="">
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="icon-container">
+                                                    <div class="icon-btn-wraper">
+                                                        <a onclick="clearFields()">
+                                                            <img src="assets/orderDetailsIcons/delete-trash.png" alt="">
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td name="Seq">128</td>
                                         <td name="description">שקים אדומים 25 קג 2 ט CEM II/B-LL 42.5 N</td>
                                         <td name="price">365.63</td>
                                         <td name="order-qt">4</td>
                                         <td name="shipToCustomer">ד.י.מגריזו בע"מ</td>
                                         <td name="shippingAddress">קיבוץ גלויות 125</td>
-                                        <td name="deliveryDate">16/07/2018</td> 
+                                        <td name="deliveryDate">16/07/2018</td>
                                     </tr>
                                     <tr>
+                                        <td class="buttons">
+                                            <div class="buttons-container">
+                                                <div class="icon-container">
+                                                    <div class="icon-btn-wraper">
+                                                        <a>
+                                                            <img src="assets/orderDetailsIcons/duplicate.png" alt="">
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="icon-container">
+                                                    <div class="icon-btn-wraper">
+                                                        <a>
+                                                            <img src="assets/orderDetailsIcons/addneww.png" alt="">
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="icon-container">
+                                                    <div class="icon-btn-wraper">
+                                                        <a onclick="clearFields()">
+                                                            <img src="assets/orderDetailsIcons/delete-trash.png" alt="">
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td name="Seq">200</td>
                                         <td name="description">CEM II 42.5N AM-SVL(צ.פ. 250 תפזורת</td>
                                         <td name="price">312.53</td>
                                         <td name="order-qt">3</td>
                                         <td name="shipToCustomer">אשטרום בע"מ -הנדסה ובניה</td>
                                         <td name="shippingAddress">קיבוץ גלויות 41</td>
-                                        <td name="deliveryDate">16/07/2018</td> 
+                                        <td name="deliveryDate">16/07/2018</td>
                                     </tr>
 
                                     <tr>
+                                        <td class="buttons">
+                                            <div class="buttons-container">
+                                                <div class="icon-container">
+                                                    <div class="icon-btn-wraper">
+                                                        <a>
+                                                            <img src="assets/orderDetailsIcons/duplicate.png" alt="">
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="icon-container">
+                                                    <div class="icon-btn-wraper">
+                                                        <a>
+                                                            <img src="assets/orderDetailsIcons/addneww.png" alt="">
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="icon-container">
+                                                    <div class="icon-btn-wraper">
+                                                        <a onclick="clearFields()">
+                                                            <img src="assets/orderDetailsIcons/delete-trash.png" alt="">
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </td>
                                         <td name="Seq">239</td>
-                                        <td name="description">CEM III  /B 42.5N-SR( מלט סיגים B תפזור</td>
+                                        <td name="description">CEM III /B 42.5N-SR( מלט סיגים B תפזור</td>
                                         <td name="price">358.24</td>
                                         <td name="order-qt">2</td>
                                         <td name="shipToCustomer">אשטרום בע"מ -הנדסה ובניה</td>
                                         <td name="shippingAddress">קיבוץ גלויות 31</td>
-                                        <td name="deliveryDate">16/07/2018</td> 
-                                    </tr>                                </tbody>
+                                        <td name="deliveryDate">16/07/2018</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
 
