@@ -169,6 +169,7 @@ div.lang-container {
 
 ul.lang-ul {
   text-align: left;
+  padding-left: 37px;
 }
 
 .logo {
@@ -203,7 +204,7 @@ body * {
 }
 
 body {
-  background: url(../assets/images/night_plant.jpg);
+  background: url(../assets/images/nesher_background.png);
   background-size: cover;
 }
 
@@ -221,6 +222,7 @@ main {
   display: flex;
   max-width: 80%;
   margin: 0 auto;
+  height: 230px ;
 }
 
 .frame {
@@ -257,11 +259,15 @@ main {
 .frame-header {
   display: flex;
   padding: 5px;
-  background: url(../assets/images/Nesher_top_image_phone.jpg);
+  background: url(../assets/images/nesher_header2.jpg);
   background-size: cover;
   background-position-y: -4px;
   height: 131px;
   border-bottom: 7px solid #a92a23;
+}
+
+.frame-header.order {
+  height: 95px;
 }
 
 .order .frame-header {
@@ -354,7 +360,7 @@ div.frame-footer {
 }
 
 h3.line-tittle {
-  font-size: 20px;
+  font-size: 18px;
   max-width: 140px;
   margin-right: 50px;
   text-align: center;
@@ -387,6 +393,10 @@ li.lang {
   transition: all 0.25s ease;
   cursor: pointer;
   font-size: 16px;
+}
+
+.signin-active a.english {
+  font-size: 14px;
 }
 
 .login .signin-active a {
@@ -531,6 +541,11 @@ li.lang {
   background: #fff;
 }
 
+.product .form-styling {
+  margin-bottom: 12px;
+  height: 30px;
+}
+
 select {
   -webkit-appearance: none;
   -webkit-border-radius: 20px!important;
@@ -612,7 +627,7 @@ div.line-transport-details {
 }
 
 div.line-product {
-  height: 125px;
+  height: 100px;
 }
 
 div.line-product.summary {
@@ -632,7 +647,7 @@ div.line-product.summary.column {
 }
 
 div.line-Shipping-details {
-  height: 160px;
+  height: 130px;
 }
 
 .line-product.summary.button,
@@ -640,7 +655,7 @@ div.line-Shipping-details {
   width: 100%;
   height: 115px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .line-product.summary.buttons {
@@ -678,6 +693,7 @@ div.btn-table {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin:  0 20px;
 }
 
 .icon-btn-wraper {
