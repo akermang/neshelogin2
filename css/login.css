@@ -266,6 +266,7 @@ main {
   border-bottom: 7px solid #a92a23;
 }
 
+.summary .frame-header,
 .frame-header.order {
   height: 95px;
 }
@@ -1143,10 +1144,11 @@ table#tableOutput {
 
 .responseTable th,
 .responseTable td {
-  text-align: right;
+  text-align: center;
   margin: 0.5em 1em;
   display: table-cell;
-  padding: 1em;
+  padding: 5px;
+  width: 150px;
 }
 div[class^="link-"] {
   background-color: #fff;
