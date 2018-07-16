@@ -34,48 +34,52 @@
                     <form class="product" action="" method="post" name="form">
                         <h3 class="line-tittle">מוצר</h3>
                         <div class="line-product product">
-                            <div class="label-wraper">
-                                <label for="sku">מק"ט</label>
+                            <div class="first-line">
+                                <div class="label-wraper">
+                                    <label for="sku">מק"ט</label>
+                                </div>
+                                <select name="sku" class="form-styling">
+                                    <option>128</option>
+                                    <option>220</option>
+                                    <option>158</option>
+                                </select>
+                                <label for="price">מחיר</label>
+                                <input class="form-styling" type="text" name="price" placeholder="" value='365.63' />
+                                <label for="order-qt">כמות</label>
+                                <select name="order-qt" class="form-styling">
+                                    <option>4</option>
+                                    <option>3</option>
+                                    <option>2</option>
+                                </select>
                             </div>
-                            <select name="sku" class="form-styling">
-                                <option>128</option>
-                                <option>220</option>
-                                <option>158</option>
-                            </select>
-                            <label for="price">מחיר</label>
-                            <input class="form-styling" type="text" name="price" placeholder="" value='365.63'/>
-                            <label for="order-qt">כמות</label>
-                            <select name="order-qt" class="form-styling">
-                                <option>4</option>
-                                <option>3</option>
-                                <option>2</option>
-                            </select>
-                            <div>
+                            <div class="second-line">
                                 <div class="label-wraper">
                                     <label for="description">תאור</label>
                                 </div>
-                                <input class="form-styling in-block-lg" type="text" name="description" placeholder="" value='שקים אדומים 25 קג 2 ט CEM II/B-LL 42.5 N' />
+                                <input class="form-styling in-block-lg" type="text" name="description" placeholder="" value='שקים אדומים 25 קג 2 ט CEM II/B-LL 42.5 N'
+                                />
                             </div>
                         </div>
 
                         <h3 class="line-tittle">פרטי אספקה</h3>
                         <div class="line-Shipping-details">
-                            <div class="label-wraper">
-                                <label for="shipToCustomer">לקוח למשלוח</label>
-                            </div>
-                            <select name="shipToCustomer" class="form-styling customer">
-                                <option>ד.י.מגריזו בע"מ</option>
-                                <option>אשטרום בע"מ -הנדסה ובניה</option>
-                                <option>אשטרום בע"מ -הנדסה ובניה</option>
-                            </select>
-
-                            <label for="deliveryDate"> תאריך אספקה</label>
-                            <select name="deliveryDate" class="form-styling">
-                                <option>16/07/2018n</option>
-                                <option>16/07/2018</option>
-                                <option>16/07/2018</option>
-                            </select>
-                            <div>
+                            <div class="first-line"><div class="label-wraper">
+                                    <label for="shipToCustomer">לקוח למשלוח</label>
+                                </div>
+                                <select name="shipToCustomer" class="form-styling customer">
+                                    <option>ד.י.מגריזו בע"מ</option>
+                                    <option>אשטרום בע"מ -הנדסה ובניה</option>
+                                    <option>אשטרום בע"מ -הנדסה ובניה</option>
+                                </select>
+    
+                                <label for="deliveryDate"> תאריך אספקה</label>
+                                <select name="deliveryDate" class="form-styling">
+                                    <option>27/07/2018</option>
+                                    <option>22/07/2018</option>
+                                    <option>1/08/2018</option>
+                                </select></div>
+                            
+                            <div class="second-line">
                                 <div class="label-wraper">
                                     <label for="shippingAddress">כתובת למשלוח </label>
                                 </div>

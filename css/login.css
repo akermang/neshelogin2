@@ -553,7 +553,7 @@ select {
 }
 
 select.form-styling.customer {
-  width: 36.5%;
+  width: 43.5%;
 }
 
 label {
@@ -627,6 +627,14 @@ div.line-transport-details {
   padding: 20px 15px;
 }
 
+.line-transport-details {
+  display: flex;
+  justify-content: center;
+}
+
+.line-transport-details input {
+    width: 32%;
+}
 div.line-product {
   height: 100px;
 }
@@ -645,6 +653,16 @@ div.line-product.summary.column {
   flex-direction: column;
   height: fit-content;
   padding-right: 112px;
+}
+
+div.first-line {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.second-line {
+  display: flex;
+  justify-content: space-around;
 }
 
 div.line-Shipping-details {
@@ -739,7 +757,7 @@ div.btn-table {
 }
 
 input.in-block-lg {
-  width: 67%;
+  width: 84%;
 }
 div.confirm {
   display: flex;
