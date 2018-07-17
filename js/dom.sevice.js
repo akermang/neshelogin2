@@ -22,7 +22,7 @@ function loginSucces() {
   $(this)
     .removeClass("idle")
     .addClass("active");
-  $(".line-tittle.mobile.product").text("פרטי אספקה");
+  $(".line-tittle.mobile.product").text("פרטי אספקה והובלה");
 }
 
 $(function() {
