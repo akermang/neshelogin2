@@ -387,6 +387,7 @@ h3.line-tittle.mobile {
   color: #fff;
   width: 217px;
   transform: translateY(23px);
+  font-weight: 500;
 }
 
 li {
@@ -487,6 +488,10 @@ li.lang {
   left: 400px;
   opacity: 0;
   transition: all 0.5s ease;
+}
+
+.form-customer.mobile {
+  top: -405px;
 }
 
 .form-customer-left {
@@ -1391,7 +1396,7 @@ label.link-label {
 
   .frame.overflow {
     overflow: hidden;
-    height: 137%;
+    height: 135%;
   }
 
   input.date {
