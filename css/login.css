@@ -244,6 +244,10 @@ main {
   transition: all 0.5s ease;
 }
 
+.frame.overflow {
+  overflow: auto;
+}
+
 
 
 .frame-long {
@@ -273,7 +277,9 @@ main {
 
 .order .frame-header {
   background: #a92a23;
-}
+} 
+
+
 
 div.frame-footer {
   display: flex;
@@ -1241,6 +1247,10 @@ div.links-container {
   padding-top: 108px;
 }
 
+.conecting-container.mobile {
+  display: none!important;
+}
+
 @media (max-width: 952px) {
   .table-responsive {
     border: 1px solid #1d338c;
@@ -1299,7 +1309,6 @@ label.link-label {
 
   .conecting-container {
     padding-top: 0;
-    padding-bottom: 30px;
   }
 
   .frame {
@@ -1322,8 +1331,9 @@ label.link-label {
     padding-top: 0;
   }
 
-  div.frame-footer {
-    margin-top: 110px;
+  .frame.overflow div.frame-footer {
+    margin-top: 0;
+    border-top: none;
   }
 
   .form-customer div.frame-footer {
@@ -1333,6 +1343,10 @@ label.link-label {
   .signin-active a {
     font-size: 13px;
   }
+}
+
+.conecting-container.mobile {
+  display: block!important;
 }
 
 @media(max-width: 380px) {
