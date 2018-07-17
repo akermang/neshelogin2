@@ -514,6 +514,14 @@ li.lang {
   transition: all 0.8s 0.4s ease;
 }
 
+.success.shipping {
+  top: -615px;
+}
+
+.success.shipping .frame-footer {
+  background-position: center;
+}
+
 .success-left {
   transform: translateX(-406px);
   opacity: 1;
