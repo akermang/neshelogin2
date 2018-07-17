@@ -9,6 +9,7 @@ $(function () {
         $(".signin-active").toggleClass("signin-inactive");
         // $(".forgot").toggleClass("forgot-left");
         $(this).removeClass("idle").addClass("active");
+        $(".line-tittle.mobile.product").text("פרטי אספקה");
     });
 });
 

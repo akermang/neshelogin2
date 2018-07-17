@@ -274,7 +274,7 @@
         <div class="conecting-container mobile">
             <div class="frame overflow">
                 <div class="frame-header">
-                    <h3 class="line-tittle mobile"> פרטי הזמנה</h3>
+                    <h3 class="line-tittle mobile product"> פרטי מוצר</h3>
                     <!-- <div class="logo-wraper">
                 <img src="assets/nesherLogo.png" alt="">
               </div> -->
@@ -303,8 +303,13 @@
                                     <option value="">CEM III /B 42.5N-SR( מלט סיגים B תפזור)</option>
                                     <option value="">CEM I 52.5 N (צ.פ. 300 תפזורת) </option>
                                 </select>
-                                <label for="price">מחיר</label>
-                                <input class="form-styling" type="text" name="price" placeholder="" value='365.63' />
+                                <div class="">
+                                    <div class="label-wraper">
+                                        <label for="description">תאור</label>
+                                    </div>
+                                    <input class="form-styling" type="text" name="description" placeholder="" value='שקים אדומים 25 קג 2 ט CEM II/B-LL 42.5 N'
+                                    />
+                                </div>
                                 <label for="order-qt">כמות</label>
                                 <select name="order-qt" class="form-styling">
                                     <option>32</option>
@@ -313,14 +318,10 @@
                                     <option>40</option>
                                     <option>42</option>
                                 </select>
+                                <label for="price">מחיר</label>
+                                <input class="form-styling" type="text" name="price" placeholder="" value='365.63' />
                             </div>
-                            <div class="">
-                                <div class="label-wraper">
-                                    <label for="description">תאור</label>
-                                </div>
-                                <input class="form-styling" type="text" name="description" placeholder="" value='שקים אדומים 25 קג 2 ט CEM II/B-LL 42.5 N'
-                                />
-                            </div>
+
                         </div>
                         <a class="btn btn-animate">המשך</a>
                         <div class="frame-footer">
@@ -342,9 +343,6 @@
                                     <option>הנסון (ישראל)בע"מ</option>
                                     <option>Sanad Trading & Marketing Company</option>
                                 </select>
-
-                                <label for="deliveryDate"> תאריך אספקה</label>
-                                <input class="form-styling date" type="date" name="shippingAddress" placeholder="" />
                             </div>
 
                             <div class="">
@@ -353,7 +351,8 @@
                                 </div>
                                 <input class="form-styling" type="text" name="shippingAddress" placeholder="" value='קיבוץ גלויות 31' />
                             </div>
-
+                            <label for="deliveryDate"> תאריך אספקה</label>
+                            <input class="form-styling date" type="date" name="shippingAddress" placeholder="" />
                             <div class="">
                                 <div class="">
                                     <label for="comments">הערות</label>

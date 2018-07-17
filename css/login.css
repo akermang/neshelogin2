@@ -571,6 +571,7 @@ input, select {
   width: 25.7%;
 }
 
+input.date,
 select {
   -webkit-appearance: none;
   -webkit-border-radius: 20px!important;
@@ -1390,7 +1391,11 @@ label.link-label {
 
   .frame.overflow {
     overflow: hidden;
-    height: 115%;
+    height: 137%;
+  }
+
+  input.date {
+    width: 100%;
   }
 }
 
