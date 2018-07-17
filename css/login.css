@@ -561,7 +561,7 @@ select {
 }
 
 select.form-styling.customer {
-  width: 43.5%;
+  width: 35.5%; 
 }
 
 label {
@@ -770,6 +770,11 @@ div.btn-table {
 input.in-block-lg {
   width: 84%;
 }
+
+input.date {
+  min-width: 24%;
+}
+
 div.confirm {
   display: flex;
   align-items: center;
