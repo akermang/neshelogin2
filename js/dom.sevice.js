@@ -1,9 +1,9 @@
 $(function() {
   $(".btn").click(function() {
     $(".form-signin").toggleClass("form-signin-left");
-    $(".success").toggleClass("success-left");
-    setTimeout(hideBanner, 2200);
-    setTimeout(loginSucces, 2700);
+    loginSucces()
+    // $(".success").toggleClass("success-left");
+    // setTimeout(hideBanner, 2200);
   });
 });
 

@@ -283,7 +283,7 @@ main {
 div.frame-footer {
   display: flex;
   padding: 5px;
-  background: url(../assets/images/bags.png);
+  background: url(../assets/images/nesher_cement_bags.png);
   background-repeat: no-repeat;
   background-position: left;
   background-position-y: 25px;
@@ -590,7 +590,7 @@ select {
 }
 
 select.form-styling.customer {
-  width: 35.5%; 
+  width: 33.5%; 
 }
 
 label {
@@ -801,7 +801,7 @@ input.in-block-lg {
 }
 
 input.date {
-  min-width: 24%;
+  min-width: 25%;
 }
 
 div.confirm {
