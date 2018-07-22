@@ -6,6 +6,7 @@ $(function() {
       // setTimeout(hideBanner, 2200);
     });
   });
+
  const productstList =[
     { name: 'CEM II/B-LL 42.5 N', description: 'שקים אדומים 25 קג 2 ט', price: '365.63', qty : '32'},
     { name: 'CEM II 42.5N AM-SVL', description: 'צ.פ. 250 תפזורת', price :'312.53', qty: '36'},
@@ -13,14 +14,27 @@ $(function() {
     { name: 'CEM I 52.5 N', description: 'צ.פ. 300 תפזורת', price: '324.61', qty :'40'}
 ]
 
+const costumersList  = [
+  {name: "א.חיידר ובניו בע'מ", address: "העבודה 13 א.ת הקלה"},
+  {name: 'ד.י.מגריזו בע"מ', address: "אזור תעשיה"},
+  {name: 'אשטרום בע"מ -הנדסה ובניה', address: "קיבוץ גלויות 31"},
+  {name: 'הנסון (ישראל)בע"מ', address: "נחל רבה"},
+  {name: 'Sanad Trading & Marketing Company', address: "אל עתיד"}
+]
+
 function populateFields(selectedItem) {
     $("#description").val(selectedItem[0].description);
     $("#price").val(selectedItem[0].price);
     $("#order-qt").val(selectedItem[0].qty);
-    let gal = $("#descriptionA").val()
+    
     $("#descriptionA").val(selectedItem[0].description);
     $("#priceA").val(selectedItem[0].price);
     $("#order-qtA").val(selectedItem[0].qty);
+} 
+
+function populateSelectedCostumer(selectedCostumer) {
+ $("#shippingAddress").val(selectedCostumer[0].address);
+ $("#shippingAddressA").val(selectedCostumer[0].address);
 } 
 
 $( "#itemSelectA" )
@@ -34,7 +48,6 @@ $( "#itemSelectA" )
     })
     populateFields(selectedItem)
   })
-  .change();
 
 
 
@@ -49,7 +62,34 @@ $( "#itemSelect" )
     })
     populateFields(selectedItem)
   })
-  .change();
+
+
+$( "#shipToCustomerA" )
+  .change(function () {
+    var str = "";
+    $( "#shipToCustomerA option:selected" ).each(function() {
+      str = $( this ).text();
+    });
+    let selectedCostumer = costumersList.filter((item) => {
+      return item.name == str
+    })
+    populateSelectedCostumer(selectedCostumer)
+  })
+  // .change();
+
+
+
+$( "#shipToCustomer" )
+  .change(function () {
+    var str = "";
+    $( "#shipToCustomer option:selected" ).each(function() {
+      str = $( this ).text();
+    });
+    let selectedCostumer = costumersList.filter((item) => {
+      return item.name == str
+    })
+    populateSelectedCostumer(selectedCostumer)
+  })  
 
 function hideBanner() {
   $(".success").toggleClass("success-left");

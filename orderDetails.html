@@ -59,7 +59,7 @@
                                 <div class="label-wraper">
                                     <label for="description">תאור</label>
                                 </div>
-                                <input id="descriptionA" class="form-styling in-block-lg" type="text" name="description" placeholder="" value='שקים אדומים 25 קג 2 ט'
+                                <input readonly id="descriptionA" class="form-styling in-block-lg" type="text" name="description" placeholder="" value='שקים אדומים 25 קג 2 ט'
                                 />
                             </div>
                         </div>
@@ -70,7 +70,7 @@
                                 <div class="label-wraper">
                                     <label for="shipToCustomer">לקוח למשלוח</label>
                                 </div>
-                                <select name="shipToCustomer" class="form-styling customer">
+                                <select id="shipToCustomerA" name="shipToCustomer" class="form-styling customer">
                                     <option>א.חיידר ובניו בע'מ</option>
                                     <option>ד.י.מגריזו בע"מ</option>
                                     <option>אשטרום בע"מ -הנדסה ובניה</option>
@@ -86,7 +86,7 @@
                                 <div class="label-wraper">
                                     <label for="shippingAddress">כתובת למשלוח </label>
                                 </div>
-                                <input class="form-styling in-block-lg" type="text" name="shippingAddress" placeholder="" value='קיבוץ גלויות 31' />
+                                <input id="shippingAddressA" class="form-styling in-block-lg" type="text" name="shippingAddress" placeholder="" value='קיבוץ גלויות 31' />
                             </div>
                         </div>
 
@@ -99,14 +99,12 @@
                             <label for="TermsOfTransportation">תנאי הובלה</label>
                             <select name="TermsOfTransportation" class="form-styling">
                                 <option>הובלת חברה</option>
-                                <option>יעלים הובלות בע\"מ</option>
-                                <option>third option</option>
+                                <option>הובלה עצמית</option>
                             </select>
                             <label for="transporter">חברת הובלה</label>
                             <select name="transporter" class="form-styling">
                                 <option>יעלים הובלות בע\"מ</option>
                                 <option>שמשון</option>
-                                <option>יעלים הובלות בע\"מ</option>
                             </select>
 
                         </div>
@@ -201,7 +199,7 @@
                                     <div class="label-wraper">
                                         <label for="description">תאור</label>
                                     </div>
-                                    <input id="description" class="form-styling" type="text" name="description" placeholder="" value='שקים אדומים 25 קג 2 ט CEM II/B-LL 42.5 N'
+                                    <input readonly id="description" class="form-styling" type="text" name="description" placeholder="" value='שקים אדומים 25 קג 2 ט CEM II/B-LL 42.5 N'
                                     />
                                 </div>
                                 <label for="order-qt">כמות</label>
@@ -230,7 +228,7 @@
                                 <div class="">
                                     <label for="shipToCustomer">לקוח למשלוח</label>
                                 </div>
-                                <select name="shipToCustomer" class="form-styling ">
+                                <select id="shipToCustomer" name="shipToCustomer" class="form-styling ">
                                     <option>א.חיידר ובניו בע'מ</option>
                                     <option>ד.י.מגריזו בע"מ</option>
                                     <option>אשטרום בע"מ -הנדסה ובניה</option>
@@ -243,7 +241,7 @@
                                 <div class="">
                                     <label for="shippingAddress">כתובת למשלוח </label>
                                 </div>
-                                <input class="form-styling" type="text" name="shippingAddress" placeholder="" value='קיבוץ גלויות 31' />
+                                <input id="shippingAddress" class="form-styling" type="text" name="shippingAddress" placeholder="" value='קיבוץ גלויות 31' />
                             </div>
                             <label for="deliveryDate"> תאריך אספקה</label>
                             <input class="form-styling date" type="date" name="shippingAddress" placeholder="" />
