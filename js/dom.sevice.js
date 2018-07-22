@@ -1,4 +1,11 @@
-
+$(function() {
+    $(".btn").click(function() {
+      $(".form-signin").toggleClass("form-signin-left");
+      loginSucces()
+      // $(".success").toggleClass("success-left");
+      // setTimeout(hideBanner, 2200);
+    });
+  });
  const productstList =[
     { name: 'CEM II/B-LL 42.5 N', description: 'שקים אדומים 25 קג 2 ט', price: '365.63', qty : '32'},
     { name: 'CEM II 42.5N AM-SVL', description: 'צ.פ. 250 תפזורת', price :'312.53', qty: '36'},
