@@ -1,11 +1,48 @@
-$(function() {
-  $(".btn").click(function() {
-    $(".form-signin").toggleClass("form-signin-left");
-    loginSucces()
-    // $(".success").toggleClass("success-left");
-    // setTimeout(hideBanner, 2200);
-  });
-});
+
+ const productstList =[
+    { name: 'CEM II/B-LL 42.5 N', description: 'שקים אדומים 25 קג 2 ט', price: '365.63', qty : '32'},
+    { name: 'CEM II 42.5N AM-SVL', description: 'צ.פ. 250 תפזורת', price :'312.53', qty: '36'},
+    { name: 'CEM III  /B 42.5N-SR', description: 'מלט סיגים B תפזור', price: '358.24', qty: '38'},
+    { name: 'CEM I 52.5 N', description: 'צ.פ. 300 תפזורת', price: '324.61', qty :'40'}
+]
+
+function populateFields(selectedItem) {
+    $("#description").val(selectedItem[0].description);
+    $("#price").val(selectedItem[0].price);
+    $("#order-qt").val(selectedItem[0].qty);
+    let gal = $("#descriptionA").val()
+    $("#descriptionA").val(selectedItem[0].description);
+    $("#priceA").val(selectedItem[0].price);
+    $("#order-qtA").val(selectedItem[0].qty);
+} 
+
+$( "#itemSelectA" )
+  .change(function () {
+    var str = "";
+    $( "#itemSelectA option:selected" ).each(function() {
+      str = $( this ).text();
+    });
+    let selectedItem = productstList.filter((item) => {
+      return item.name == str
+    })
+    populateFields(selectedItem)
+  })
+  .change();
+
+
+
+$( "#itemSelect" )
+  .change(function () {
+    var str = "";
+    $( "#itemSelect option:selected" ).each(function() {
+      str = $( this ).text();
+    });
+    let selectedItem = productstList.filter((item) => {
+      return item.name == str
+    })
+    populateFields(selectedItem)
+  })
+  .change();
 
 function hideBanner() {
   $(".success").toggleClass("success-left");

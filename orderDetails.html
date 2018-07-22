@@ -38,17 +38,17 @@
                                 <div class="label-wraper">
                                     <label for="sku">מק"ט</label>
                                 </div>
-                                <select name="sku" class="form-styling">
-                                    <option>שקים אדומים 25 קג 2 ט CEM II/B-LL 42.5 N</option>
-                                    <option>CEM II 42.5N AM-SVL(צ.פ. 250 תפזורת)</option>
-                                    <option value="">CEM III /B 42.5N-SR( מלט סיגים B תפזור)</option>
-                                    <option value="">CEM I 52.5 N (צ.פ. 300 תפזורת) </option>
+                                <select id="itemSelectA" name="sku" class="form-styling">
+                                    <option value="option1">CEM II/B-LL 42.5 N</option>
+                                    <option value="option2">CEM II 42.5N AM-SVL</option>
+                                    <option value="option3">CEM III  /B 42.5N-SR</option>
+                                    <option value="option4">CEM I 52.5 N</option>
                                 </select>
                                 <label for="price">מחיר</label>
-                                <input class="form-styling" type="text" name="price" placeholder="" value='365.63' />
+                                <input id="priceA" class="form-styling" type="text" name="price" placeholder="" value='365.63' />
                                 <label for="order-qt">כמות</label>
-                                <select name="order-qt" class="form-styling">
-                                    <option>32</option>
+                                <select id="order-qtA" name="order-qt" class="form-styling">
+                                    <option id="opt-A1">32</option>
                                     <option>36</option>
                                     <option>38</option>
                                     <option>40</option>
@@ -59,7 +59,7 @@
                                 <div class="label-wraper">
                                     <label for="description">תאור</label>
                                 </div>
-                                <input class="form-styling in-block-lg" type="text" name="description" placeholder="" value='שקים אדומים 25 קג 2 ט CEM II/B-LL 42.5 N'
+                                <input id="descriptionA" class="form-styling in-block-lg" type="text" name="description" placeholder="" value='שקים אדומים 25 קג 2 ט'
                                 />
                             </div>
                         </div>
@@ -191,29 +191,29 @@
                                 <div class="label-wraper">
                                     <label for="sku">מק"ט</label>
                                 </div>
-                                <select name="sku" class="form-styling">
-                                    <option>שקים אדומים 25 קג 2 ט CEM II/B-LL 42.5 N</option>
-                                    <option>CEM II 42.5N AM-SVL(צ.פ. 250 תפזורת)</option>
-                                    <option value="">CEM III /B 42.5N-SR( מלט סיגים B תפזור)</option>
-                                    <option value="">CEM I 52.5 N (צ.פ. 300 תפזורת) </option>
+                                <select id="itemSelect" name="sku" class="form-styling">
+                                    <option value="option1">CEM II/B-LL 42.5 N</option>
+                                    <option value="option2">CEM II 42.5N AM-SVL</option>
+                                    <option value="option3">CEM III  /B 42.5N-SR</option>
+                                    <option value="option4">CEM I 52.5 N</option>
                                 </select>
                                 <div class="">
                                     <div class="label-wraper">
                                         <label for="description">תאור</label>
                                     </div>
-                                    <input class="form-styling" type="text" name="description" placeholder="" value='שקים אדומים 25 קג 2 ט CEM II/B-LL 42.5 N'
+                                    <input id="description" class="form-styling" type="text" name="description" placeholder="" value='שקים אדומים 25 קג 2 ט CEM II/B-LL 42.5 N'
                                     />
                                 </div>
                                 <label for="order-qt">כמות</label>
-                                <select name="order-qt" class="form-styling">
-                                    <option>32</option>
+                                <select id="order-qt" name="order-qt" class="form-styling">
+                                    <option id="opt-1">32</option>
                                     <option>36</option>
                                     <option>38</option>
                                     <option>40</option>
                                     <option>42</option>
                                 </select>
                                 <label for="price">מחיר</label>
-                                <input class="form-styling" type="text" name="price" placeholder="" value='365.63' />
+                                <input id="price" class="form-styling" type="text" name="price" placeholder="" value='365.63' />
                             </div>
 
                         </div>
@@ -267,15 +267,15 @@
                         <a href="ordersSummaryTable.html" ng-click="checked = !checked" class="btn-customer">לסיכום הזמנה</a>
                     </form>
                     <div class="success shipping">
-                            <div class="successtext">
-                                <p>
-                                    <label for="">פרטי אספקה והובלה</label>
-                                    <label for="">...</label>
-                                </p>
-                                <div class="frame-footer">
-                                    
-                                </div>
+                        <div class="successtext">
+                            <p>
+                                <label for="">פרטי אספקה והובלה</label>
+                                <label for="">...</label>
+                            </p>
+                            <div class="frame-footer">
+
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
