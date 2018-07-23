@@ -1,95 +1,79 @@
 $(function() {
-    $(".btn").click(function() {
-      $(".form-signin").toggleClass("form-signin-left");
-      loginSucces()
-      // $(".success").toggleClass("success-left");
-      // setTimeout(hideBanner, 2200);
-    });
+  $(".btn").click(function() {
+    $(".form-signin").toggleClass("form-signin-left");
+    loginSucces();
+    // $(".success").toggleClass("success-left");
+    // setTimeout(hideBanner, 2200);
   });
+});
 
- const productstList =[
-    { name: 'CEM II/B-LL 42.5 N', description: 'שקים אדומים 25 קג 2 ט', price: '365.63', qty : '32'},
-    { name: 'CEM II 42.5N AM-SVL', description: 'צ.פ. 250 תפזורת', price :'312.53', qty: '36'},
-    { name: 'CEM III  /B 42.5N-SR', description: 'מלט סיגים B תפזור', price: '358.24', qty: '38'},
-    { name: 'CEM I 52.5 N', description: 'צ.פ. 300 תפזורת', price: '324.61', qty :'40'}
-]
+const productstList = [
+  {
+    name: "CEM II/B-LL 42.5 N",
+    description: "שקים אדומים 25 קג 2 ט",
+    price: "365.63",
+    qty: "32"
+  },
+  {
+    name: "CEM II 42.5N AM-SVL",
+    description: "צ.פ. 250 תפזורת",
+    price: "312.53",
+    qty: "36"
+  },
+  {
+    name: "CEM III  /B 42.5N-SR",
+    description: "מלט סיגים B תפזור",
+    price: "358.24",
+    qty: "38"
+  },
+  {
+    name: "CEM I 52.5 N",
+    description: "צ.פ. 300 תפזורת",
+    price: "324.61",
+    qty: "40"
+  }
+];
 
-const costumersList  = [
-  {name: "א.חיידר ובניו בע'מ", address: "העבודה 13 א.ת הקלה"},
-  {name: 'ד.י.מגריזו בע"מ', address: "אזור תעשיה"},
-  {name: 'אשטרום בע"מ -הנדסה ובניה', address: "קיבוץ גלויות 31"},
-  {name: 'הנסון (ישראל)בע"מ', address: "נחל רבה"},
-  {name: 'Sanad Trading & Marketing Company', address: "אל עתיד"}
-]
+const costumersList = [
+  { name: "א.חיידר ובניו בע'מ", address: "העבודה 13 א.ת הקלה" },
+  { name: 'ד.י.מגריזו בע"מ', address: "אזור תעשיה" },
+  { name: 'אשטרום בע"מ -הנדסה ובניה', address: "קיבוץ גלויות 31" },
+  { name: 'הנסון (ישראל)בע"מ', address: "נחל רבה" },
+  { name: "Sanad Trading & Marketing Company", address: "אל עתיד" }
+];
 
 function populateFields(selectedItem) {
-    $("#description").val(selectedItem[0].description);
-    $("#price").val(selectedItem[0].price);
-    $("#order-qt").val(selectedItem[0].qty);
-    
-    $("#descriptionA").val(selectedItem[0].description);
-    $("#priceA").val(selectedItem[0].price);
-    $("#order-qtA").val(selectedItem[0].qty);
-} 
+  $("#description").val(selectedItem.description);
+  $("#price").val(selectedItem.price);
+  $("#order-qt").val(selectedItem.qty);
+
+  $("#descriptionA").val(selectedItem.description);
+  $("#priceA").val(selectedItem.price);
+  $("#order-qtA").val(selectedItem.qty);
+}
 
 function populateSelectedCostumer(selectedCostumer) {
- $("#shippingAddress").val(selectedCostumer[0].address);
- $("#shippingAddressA").val(selectedCostumer[0].address);
-} 
+  $("#shippingAddress").val(selectedCostumer.address);
+  $("#shippingAddressA").val(selectedCostumer.address);
+}
 
-$( "#itemSelectA" )
-  .change(function () {
-    var str = "";
-    $( "#itemSelectA option:selected" ).each(function() {
-      str = $( this ).text();
+function selectHandler(selectElementId, optionArray, populateSelected) {
+  $(selectElementId).change(function() {
+    let str = "";
+    $(selectElementId + " option:selected").each(function() {
+      str = $(this).text();
     });
-    let selectedItem = productstList.filter((item) => {
-      return item.name == str
-    })
-    populateFields(selectedItem)
-  })
-
-
-
-$( "#itemSelect" )
-  .change(function () {
-    var str = "";
-    $( "#itemSelect option:selected" ).each(function() {
-      str = $( this ).text();
+    let selectedItem = optionArray.filter(item => {
+      return item.name == str;
     });
-    let selectedItem = productstList.filter((item) => {
-      return item.name == str
-    })
-    populateFields(selectedItem)
-  })
+    populateSelected(selectedItem[0]);
+  });
+}
 
-
-$( "#shipToCustomerA" )
-  .change(function () {
-    var str = "";
-    $( "#shipToCustomerA option:selected" ).each(function() {
-      str = $( this ).text();
-    });
-    let selectedCostumer = costumersList.filter((item) => {
-      return item.name == str
-    })
-    populateSelectedCostumer(selectedCostumer)
-  })
-  // .change();
-
-
-
-$( "#shipToCustomer" )
-  .change(function () {
-    var str = "";
-    $( "#shipToCustomer option:selected" ).each(function() {
-      str = $( this ).text();
-    });
-    let selectedCostumer = costumersList.filter((item) => {
-      return item.name == str
-    })
-    populateSelectedCostumer(selectedCostumer)
-  })  
+selectHandler("#itemSelectA", productstList, populateFields);
+selectHandler("#itemSelect", productstList, populateFields);
+selectHandler("#shipToCustomerA", costumersList, populateSelectedCostumer);
+selectHandler("#shipToCustomer", costumersList, populateSelectedCostumer);
 
 function hideBanner() {
   $(".success").toggleClass("success-left");
